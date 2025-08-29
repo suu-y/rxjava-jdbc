@@ -612,8 +612,8 @@ public final class Util {
                 return null;
             }
             final int type = rs.getMetaData().getColumnType(i);
-            // TODO java.util.Calendar support
-            // TODO XMLGregorian Calendar support
+            System.out.println("SATD ID: IMPLEMENTATION");
+            System.out.println("SATD ID: IMPLEMENTATION");
             if (type == Types.DATE)
                 return rs.getDate(i, Calendar.getInstance());
             else if (type == Types.TIME)

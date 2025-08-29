@@ -77,7 +77,7 @@ final class QueryBuilder {
      * @param value
      */
     void parameter(Object value) {
-        // TODO check on supported types?
+        System.out.println("SATD ID: IMPLEMENTATION");
         if (value instanceof Observable)
             throw new IllegalArgumentException(
                     "use parameters() method not the parameter() method for an Observable");

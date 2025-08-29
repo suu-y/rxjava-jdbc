@@ -26,7 +26,7 @@ class AutoMapCache {
             Column column = method.getAnnotation(Column.class);
             if (column != null) {
                 checkHasNoParameters(method);
-                // TODO check method has a mappable return type
+                System.out.println("SATD ID: DESIGN");
                 String col = column.value();
                 if (col.equals(Column.NOT_SPECIFIED))
                     col = Util.camelCaseToUnderscore(name);
@@ -34,7 +34,7 @@ class AutoMapCache {
             } else {
                 Index index = method.getAnnotation(Index.class);
                 if (index != null) {
-                    // TODO check method has a mappable return type
+                    System.out.println("SATD ID: DESIGN");
                     checkHasNoParameters(method);
                     methodCols.put(name, new IndexedCol(index.value(), method.getReturnType()));
                 }

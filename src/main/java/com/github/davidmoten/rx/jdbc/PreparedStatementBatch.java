@@ -105,7 +105,7 @@ class PreparedStatementBatch implements PreparedStatement {
 
     @Override
     public void close() throws SQLException {
-        // TODO how to close to release resource?
+        System.out.println("SATD ID: DESIGN");
     }
 
     @Override
